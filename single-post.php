@@ -106,12 +106,9 @@ get_header(); ?>
                     </p>
                 </div>
             </div>
-
-            <div id="<?= $member->ID ?>" class="modalWindow">123</div>
         <?php
         }
         ?>
-        <div class="filter"></div>
     </div>
 </main>
 

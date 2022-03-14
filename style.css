@@ -611,11 +611,16 @@ nav>ul>li a:hover {
     display: flex;
     flex-direction: column;
 }
+.team-info>p{
+    margin: 0;
+}
+.team-info .team-name {
+    margin-bottom: 12px;
+}
 
-.team-info .team-name {}
+.team-info .team-property {
+    margin-left: 10px;
+    margin-top: 8px;
+}
 
-.team-info .team-property {}
 
-
-
-/* MODAL WINDOW */

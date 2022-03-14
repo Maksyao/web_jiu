@@ -1,0 +1,73 @@
+.filter-modal{
+    background-color: rgba(24, 5, 54, 0.6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;   
+    left: 0;
+    z-index: 100;
+    visibility: hidden;
+}
+.modal-window{
+    display: table;
+    min-width: 400px;
+    max-width: 85vw;
+    background: rgba(65, 122, 225, 1);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;   
+    left: 0;
+    margin: auto;
+    border-radius: 40px;
+    z-index: 200;
+    visibility: hidden;
+}
+.modal-active{
+    visibility: visible !important;
+    overflow: hidden;
+}
+
+
+.modal-card {
+    margin: 7px;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.modal-photo {
+    margin: 10px;
+    width: 180px;
+}
+
+.modal-info {
+    font-size: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.modal-info>p{
+    margin: 0;
+}
+.modal-info .team-name {
+    margin-bottom: 12px;
+}
+
+.modal-info .team-property {
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.achivements{
+    margin: 15px;
+    margin-top: 5px;
+
+}
+.achivements p{
+    font-size: 100%;
+}
+.achivements li{
+    font-size: 80%;
+    margin-bottom: 5px;
+}

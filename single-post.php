@@ -92,18 +92,55 @@ get_header(); ?>
     <h5 class="sec-name">Команда</h5>
     <div class="university-team">
 
+
         <?php
         foreach ($team as $member) {
         ?>
+            <div class="filter-modal" id="filter<?= $member->ID ?>" onclick="show(<?= $member->ID ?>)"></div>
             <div onclick="show(<?= $member->ID ?>)" class="team-card">
                 <img src="<?= CFS()->get('photo', $member->ID); ?>" alt="Фото" class="team-photo">
                 <div class="team-info">
                     <p class="team-name">
                         <?= CFS()->get('name', $member->ID); ?>
                     </p>
+                    <p>Разряд:</p>
                     <p class="team-property">
                         <?= CFS()->get('weight', $member->ID); ?>
                     </p>
+                </div>
+            </div>
+
+            <div class="modal-window" id="modal<?= $member->ID ?>">
+                <div class="modal-card">
+                    <img src="<?= CFS()->get('photo', $member->ID); ?>" alt="Фото" class="modal-photo">
+                    <div class="modal-info">
+                        <p class="team-name">
+                            <?= CFS()->get('name', $member->ID); ?>
+                        </p>
+                        <p>Разряд:</p>
+                        <p class="team-property">
+                            <?= CFS()->get('weight', $member->ID); ?>
+                        </p>
+                    </div>
+                </div>
+                <div class="achivements">
+                    <?php
+                    $loop = CFS()->get('achivements', $member->ID);
+                    if($loop){
+                    ?>
+                    <p>Достижения:</p>
+                    <ul>
+                        <?php
+                        foreach($loop as $ach){
+                        ?>
+                        <li><?= $ach['ach'];?></li>
+                        <?php
+                        }
+                        ?>
+                    </ul>
+                    <?php
+                    }
+                    ?>
                 </div>
             </div>
         <?php

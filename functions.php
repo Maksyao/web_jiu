@@ -14,6 +14,10 @@
             wp_enqueue_script( 'newsSwitcher', get_template_directory_uri() . '/assets/js/newsSwitcher.js', null, null, true );
         }
 		
+        if(is_single()){
+            wp_enqueue_script( 'modal_script', get_template_directory_uri() . '/assets/js/modal.js', null, null, true );
+            wp_enqueue_style( 'modal_style', get_template_directory_uri() . '/assets/css/modal.css');
+        }
     }
 
 

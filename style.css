@@ -58,6 +58,7 @@ body {
 }
 
 .logo-img {
+    height: 150px;
     margin: 10px;
     margin-left: 40px;
 }

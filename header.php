@@ -38,12 +38,9 @@
     <div class="flex-container">
         <header class="flex-header">
             <a class="logo" href="<?= home_url(); ?>">
-                <picture class="logo-img">
-                    <source media="(min-width: 1024px)" srcset="<?= get_template_directory_uri() . '/assets/images/1024/logo1024.png' ?>">
-                    <source media="(min-width: 768px)" srcset="<?= get_template_directory_uri() . '/assets/images/768/logo768.png' ?>">
-                    <source media="(min-width: 360px)" srcset="<?= get_template_directory_uri() . '/assets/images/360/logo360.png' ?>">
-                    <img src="<?= get_template_directory_uri() . '/assets/images/logo.png' ?>" alt="Logo">
-                </picture>
+
+                <img class="logo-img" src="<?= get_template_directory_uri() . '/assets/images/logo.png' ?>" alt="Logo">
+
                 <div class="logo-text">
                     <p>Национальная</p>
                     <p>Спортивная</p>

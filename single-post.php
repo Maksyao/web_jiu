@@ -19,7 +19,7 @@ get_header(); ?>
     $leads = get_posts(array(
         'numberposts' => 0,
         'category' => 6,
-        'tag' => get_the_title(),
+        'tag' => str_replace(' ', '-', get_the_title()),
         'post_type' => 'post',
         'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
     ));
@@ -55,7 +55,7 @@ get_header(); ?>
     $trainers = get_posts(array(
         'numberposts' => 0,
         'category' => 12,
-        'tag' => get_the_title(),
+        'tag' => str_replace(' ', '-', get_the_title()),
         'post_type' => 'post',
         'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
     ));
@@ -82,7 +82,7 @@ get_header(); ?>
     $team = get_posts(array(
         'numberposts' => 0,
         'category' => 7,
-        'tag' => get_the_title(),
+        'tag' => str_replace(' ', '-', get_the_title()),
         'post_type' => 'post',
         'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
     ));

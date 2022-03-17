@@ -41,12 +41,6 @@
 
                 <img class="logo-img" src="<?= get_template_directory_uri() . '/assets/images/logo.png' ?>" alt="Logo">
 
-                <div class="logo-text">
-                    <p>Национальная</p>
-                    <p>Спортивная</p>
-                    <p>Студенческая</p>
-                    <p>Лига Джиу-джитсу</p>
-                </div>
             </a>
             <nav>
                 <?php

@@ -67,20 +67,6 @@ body {
     filter: blur(2px);
 }
 
-.logo-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: black;
-    font-size: 45%;
-    font-family: 'Comfortaa', cursive;
-}
-.logo-text>p{
-    margin: 5px;
-}
-.logo-text>p:last-child {
-    margin-top: 12px;
-}
 nav {
     display: flex;
     text-align: center;

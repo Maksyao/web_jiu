@@ -15,11 +15,11 @@ get_header(); ?>
     </div>
 
     <?php
-
+    $tag = get_the_tags();
     $leads = get_posts(array(
         'numberposts' => 0,
         'category' => 6,
-        'tag' => str_replace(' ', '-', get_the_title()),
+        'tag' => str_replace(' ', '-', $tag[0]->name),
         'post_type' => 'post',
         'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
     ));
@@ -55,7 +55,7 @@ get_header(); ?>
     $trainers = get_posts(array(
         'numberposts' => 0,
         'category' => 12,
-        'tag' => str_replace(' ', '-', get_the_title()),
+        'tag' => str_replace(' ', '-', $tag[0]->name),
         'post_type' => 'post',
         'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
     ));
@@ -82,10 +82,11 @@ get_header(); ?>
     $team = get_posts(array(
         'numberposts' => 0,
         'category' => 7,
-        'tag' => str_replace(' ', '-', get_the_title()),
+        'tag' => str_replace(' ', '-', $tag[0]->name),
         'post_type' => 'post',
         'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
     ));
+
     ?>
 
 
